@@ -136,4 +136,5 @@ dependencies {
     implementation(Dependencies.ahBottomNavigation)
     implementation(Dependencies.AndroidX.recyclerview)
     implementation(Dependencies.balloon)
+    implementation("com.github.jitpack:gradle-simple:1.0")
 }
