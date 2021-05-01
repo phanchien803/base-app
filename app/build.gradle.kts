@@ -63,33 +63,33 @@ android {
         }
     }
 
-    flavorDimensions("default")
-
-    productFlavors {
-        create("develop") {
-            dimension("default")
-//            versionNameSuffix = "-dev"
-//            applicationIdSuffix = ".dev"
-            resValue("string", "app_name", "Base app")
-            buildConfigField("String", "BASE_API_URL", "\"${Setup.BaseApi.dev}\"")
-        }
-        create("staging") {
-            dimension("default")
-//            versionNameSuffix = "-stg"
-//            applicationIdSuffix = ".stg"
-            resValue("string", "app_name", "Base app")
-            buildConfigField("String", "BASE_API_URL", "\"${Setup.BaseApi.staging}\"")
-        }
-        create("production") {
-            dimension("default")
-            resValue("string", "app_name", "Base App")
-            buildConfigField("String", "BASE_API_URL", "\"${Setup.BaseApi.production}\"")
-        }
-    }
-
-    productFlavors.forEach {
-        it.signingConfig = signingConfigs.getByName(it.name)
-    }
+//    flavorDimensions("default")
+//
+//    productFlavors {
+//        create("develop") {
+//            dimension("default")
+////            versionNameSuffix = "-dev"
+////            applicationIdSuffix = ".dev"
+//            resValue("string", "app_name", "Base app")
+//            buildConfigField("String", "BASE_API_URL", "\"${Setup.BaseApi.dev}\"")
+//        }
+//        create("staging") {
+//            dimension("default")
+////            versionNameSuffix = "-stg"
+////            applicationIdSuffix = ".stg"
+//            resValue("string", "app_name", "Base app")
+//            buildConfigField("String", "BASE_API_URL", "\"${Setup.BaseApi.staging}\"")
+//        }
+//        create("production") {
+//            dimension("default")
+//            resValue("string", "app_name", "Base App")
+//            buildConfigField("String", "BASE_API_URL", "\"${Setup.BaseApi.production}\"")
+//        }
+//    }
+//
+//    productFlavors.forEach {
+//        it.signingConfig = signingConfigs.getByName(it.name)
+//    }
 
     compileOptions {
         sourceCompatibility = Setup.App.sourceCompatibility
