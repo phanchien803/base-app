@@ -79,18 +79,13 @@ dependencies {
     implementation(Dependencies.ahBottomNavigation)
     implementation(Dependencies.AndroidX.recyclerview)
     implementation(Dependencies.balloon)
+    implementation("com.google.android.gms:play-services-ads:20.1.0")
 }
 
 afterEvaluate {
     publishing {
         publications {
             // Creates a Maven publication called "release".
-//            release(MavenPublication) {
-//                from components.release
-//                groupId = 'com.github.jitpack'
-//                artifactId = 'chien-base'
-//                version = '1.0'
-//            }
             create<MavenPublication>("release") {
                 from(components.findByName("release"))
                 groupId = "com.github.jitpack"
