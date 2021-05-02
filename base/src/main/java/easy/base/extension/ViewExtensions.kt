@@ -117,6 +117,7 @@ fun Fragment.hideKeyBoard(){
 
 fun AppCompatActivity.replaceFragment(containerViewId: Int = R.id.fragment_container, fragment: Fragment, addToBackStack: Boolean = true){
     supportFragmentManager.commit {
+        setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right)
         replace(containerViewId, fragment, fragment::class.java.simpleName)
         if (addToBackStack) addToBackStack("")
     }
