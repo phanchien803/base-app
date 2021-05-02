@@ -65,11 +65,6 @@ abstract class BaseFragment() : Fragment() {
             .flowWithLifecycle(viewLifecycleOwner.lifecycle)
             .onEach { showProgress(it) }
             .launchIn(viewLifecycleOwner.lifecycleScope)
-        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-               this@BaseFragment.handleOnBackPressed()
-            }
-        })
     }
 
     override fun onStart() {
@@ -97,10 +92,8 @@ abstract class BaseFragment() : Fragment() {
         }
     }
 
-    protected fun handleOnBackPressed() {
-        if (!findNavController().popBackStack()) {
-            requireActivity().finish()
-        }
+    fun handleOnBackPressed() : Boolean {
+        return false
     }
 
     private fun showError(errorMessage: String) {
@@ -205,11 +198,8 @@ abstract class BaseFragment() : Fragment() {
             // OnUnifiedNativeAdLoadedListener implementation.
             // If this callback occurs after the activity is destroyed, you must call
             // destroy and return or you may get a memory leak.
-            var activityDestroyed = false
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-                activityDestroyed = requireActivity().isDestroyed
-            }
-            if (activityDestroyed || requireActivity().isFinishing || requireActivity().isChangingConfigurations) {
+
+            if (!isAdded) {
                 unifiedNativeAd.destroy()
                 return@forNativeAd
             }

@@ -12,9 +12,11 @@ import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import androidx.annotation.ColorRes
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.*
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import easy.base.R
 
 fun View.setOnDebouncedClickListener(action: (View) -> Unit) {
@@ -110,5 +112,12 @@ fun Fragment.hideKeyBoard(){
     requireActivity().currentFocus?.let { view ->
         val imm = requireContext().getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
         imm?.hideSoftInputFromWindow(view.windowToken, 0)
+    }
+}
+
+fun AppCompatActivity.replaceFragment(containerViewId: Int = R.id.fragment_container, fragment: Fragment, addToBackStack: Boolean = true){
+    supportFragmentManager.commit {
+        replace(containerViewId, fragment, fragment::class.java.simpleName)
+        if (addToBackStack) addToBackStack("")
     }
 }
