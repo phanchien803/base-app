@@ -2,23 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="easy.app">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+<!--    <uses-permission android:name="android.permission.INTERNET"/>-->
 
-    <application
-        android:name="easy.app.base.application.MyApplication"
-        android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
-        android:label="App"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/App_Theme">
-        <activity android:name="easy.app.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--    <application-->
+<!--        android:name="easy.app.base.application.MyApplication"-->
+<!--        android:allowBackup="false"-->
+<!--        android:icon="@mipmap/ic_launcher"-->
+<!--        android:label="App"-->
+<!--        android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--        android:supportsRtl="true"-->
+<!--        android:theme="@style/App_Theme">-->
+<!--        <activity android:name="easy.app.MainActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--    </application>-->
 
 </manifest>
