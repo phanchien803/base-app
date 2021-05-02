@@ -47,7 +47,7 @@ abstract class BaseFragment() : Fragment() {
         hideKeyBoard()
         view.findViewById<Toolbar>(R.id.toolbar)?.apply {
             setNavigationOnClickListener {
-                handleOnBackPressed()
+                requireActivity().onBackPressed()
             }
             contentInsetStartWithNavigation = 0
         }
