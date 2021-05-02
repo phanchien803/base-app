@@ -91,7 +91,12 @@ afterEvaluate {
 //                artifactId = 'chien-base'
 //                version = '1.0'
 //            }
-
+            create<MavenPublication>("release") {
+                from(components.findByName("release"))
+                groupId = "com.github.jitpack"
+                artifactId = "chien-base"
+                version = "1.0"
+            }
         }
     }
 }
