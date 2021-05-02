@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text" format="string" />
+    <attr name="text_size" format="dimension" />
+    <attr name="icon_size" format="dimension" />
+    <attr name="padding_horizontal" format="dimension" />
+    <attr name="padding_vertical" format="dimension" />
+    <attr name="text_color" format="reference" />
+    <attr name="text_font" format="reference" />
+    <attr name="icon" format="reference" />
+    <attr name="background_color" format="reference" />
+    <attr name="enabled" format="boolean" />
+
+
+    <declare-styleable name="BaseButton">
+        <attr name="button_type">
+            <enum name="normal" value="0" />
+            <enum name="outlined" value="1" />
+            <enum name="text" value="2" />
+        </attr>
+        <attr name="size">
+            <enum name="basic" value="0" />
+            <enum name="medium" value="1" />
+        </attr>
+        <attr name="text" />
+        <attr name="text_size" />
+        <attr name="icon_size" />
+        <attr name="icon" />
+        <attr name="enabled" />
+        <attr name="background_color" />
+        <attr name="text_color" />
+        <attr name="text_font" />
+        <attr name="padding_horizontal" />
+        <attr name="padding_vertical" />
+    </declare-styleable>
+
+    //TextField
+    <attr name="start_icon" format="reference" />
+    <attr name="place_holder" format="string" />
+
+    <declare-styleable name="BaseEditText">
+        <attr name="place_holder" />
+        <attr name="start_icon" />
+        <attr name="android:inputType"/>
+    </declare-styleable>
+
+
+    <attr name="button_text" format="string" />
+
+    <declare-styleable name="EmptyProfileView">
+        <attr name="icon" />
+        <attr name="text" />
+        <attr name="button_text" />
+    </declare-styleable>
+
+    <attr name="percent" format="float" />
+
+    <declare-styleable name="SliderView">
+        <attr name="percent" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleItemList">
+        <attr name="text" />
+    </declare-styleable>
+
+    <attr name="can_check" format="boolean" />
+
+    <declare-styleable name="ItemListCheck">
+        <attr name="text" />
+        <attr name="can_check" />
+    </declare-styleable>
+</resources>

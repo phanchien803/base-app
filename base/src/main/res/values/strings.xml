@@ -1,0 +1,13 @@
+<resources>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_message_Offline">Your Internet connection appears to be offline.</string>
+    <string name="exception_unknownhost">Unable to locate the server. Please check your network connection.</string>
+    <string name="exception_connect_timeout">Unable to connect to the server. Please check your network connection.</string>
+    <string name="exception_socket_timeout">The connection has timed out. Please try again.</string>
+    <string name="exception_socket">There are some problems with the connection. Please try again.</string>
+    <string name="exception_ssl_handshake">Your connection is not secure.</string>
+    <string name="error_something_went_wrong">Some thing went wrong</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection</string>
+</resources>
