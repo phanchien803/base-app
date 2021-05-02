@@ -54,7 +54,9 @@ dependencies {
     testImplementation(Dependencies.Junit.junit)
 //    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
 //    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation("com.github.jitpack:gradle-simple:1.0")
+    implementation("com.github.jitpack:gradle-simple:1.0") {
+        exclude(group = "com.google.guava:guava:18.0")
+    }
     implementation("com.google.code.gson:gson:2.8.6")
     implementation(Dependencies.AndroidX.fragmentKtx)
     implementation(Dependencies.AndroidX.lifecycleViewModelKtx)
