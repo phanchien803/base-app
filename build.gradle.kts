@@ -3,6 +3,7 @@ buildscript {
     val kotlin_version by extra("1.4.32")
 //    val kotlin_version = "1.4.32"
     repositories {
+        mavenCentral()
         google()
         jcenter()
         maven { url = uri("https://jitpack.io") }
