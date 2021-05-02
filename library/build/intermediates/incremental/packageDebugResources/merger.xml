@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3" xmlns:ns1="http://schemas.android.com/tools"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/phandangchien/Documents/projects/News/library/src/main/res"><file path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable-v24/ic_launcher_foreground.xml" preprocessing="true" qualifiers="v24"><generated-file path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml" qualifiers="anydpi-v24" type="drawable"/></file><file path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/bg_splash.xml" preprocessing="true" qualifiers=""><generated-file path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/pngs/debug/drawable-xxxhdpi/bg_splash.png" qualifiers="xxxhdpi-v4" type="drawable"/><generated-file path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/pngs/debug/drawable-mdpi/bg_splash.png" qualifiers="mdpi-v4" type="drawable"/><generated-file path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/pngs/debug/drawable-ldpi/bg_splash.png" qualifiers="ldpi-v4" type="drawable"/><generated-file path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/pngs/debug/drawable-xxhdpi/bg_splash.png" qualifiers="xxhdpi-v4" type="drawable"/><generated-file path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/pngs/debug/drawable-hdpi/bg_splash.png" qualifiers="hdpi-v4" type="drawable"/><generated-file path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/pngs/debug/drawable-xhdpi/bg_splash.png" qualifiers="xhdpi-v4" type="drawable"/><generated-file path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/pngs/debug/drawable-anydpi-v24/bg_splash.xml" qualifiers="anydpi-v24" type="drawable"/></file></source><source path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/rs/debug"/><source path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/phandangchien/Documents/projects/News/library/src/main/res"><file name="ic_launcher" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-mdpi/ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-hdpi/ic_launcher_round.png" qualifiers="hdpi-v4" type="mipmap"/><file name="bg_button_text" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/bg_button_text.xml" qualifiers="" type="drawable"/><file name="bg_dialog" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/bg_dialog.xml" qualifiers="" type="drawable"/><file name="bg_button_disable" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/bg_button_disable.xml" qualifiers="" type="drawable"/><file name="button_ripple" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/button_ripple.xml" qualifiers="" type="drawable"/><file name="button_ripple_coner_12dp" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/button_ripple_coner_12dp.xml" qualifiers="" type="drawable"/><file name="bg_button_dark_sky_blue" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/bg_button_dark_sky_blue.xml" qualifiers="" type="drawable"/><file name="bg_button" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/bg_button.xml" qualifiers="" type="drawable"/><file name="round_corners" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/round_corners.xml" qualifiers="" type="drawable"/><file name="bg_button_stroke_light_navy" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/bg_button_stroke_light_navy.xml" qualifiers="" type="drawable"/><file name="bg_button_bluish" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/bg_button_bluish.xml" qualifiers="" type="drawable"/><file name="bg_button_blue" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/bg_button_blue.xml" qualifiers="" type="drawable"/><file name="bg_button_outline" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/bg_button_outline.xml" qualifiers="" type="drawable"/><file name="ic_launcher_background" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/drawable/ic_launcher_background.xml" qualifiers="" type="drawable"/><file name="ic_launcher" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-xxxhdpi/ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="fragment_progress_dialog" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/layout/fragment_progress_dialog.xml" qualifiers="" type="layout"/><file name="alert_confirm" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/layout/alert_confirm.xml" qualifiers="" type="layout"/><file name="activity_main" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="layout_base_button" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/layout/layout_base_button.xml" qualifiers="" type="layout"/><file name="ic_launcher" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file path="/Users/phandangchien/Documents/projects/News/library/src/main/res/values/colors.xml" qualifiers=""><color name="purple_200">#FFBB86FC</color><color name="purple_500">#FF6200EE</color><color name="purple_700">#FF3700B3</color><color name="teal_200">#FF03DAC5</color><color name="teal_700">#FF018786</color><color name="black">#FF000000</color><color name="white">#FFFFFFFF</color><color name="light_blue">#7ed7ed</color><color name="black_20">#33000000</color><color name="dark_sky_blue">#3fc1e8</color><color name="transparent">#00000000</color><color name="text_light_gray">#788494</color><color name="pale_blue">#dbe2e8</color><color name="white_three">#f9f9f9</color><color name="greyish">#b2b2b2</color><color name="bluish_two">#2999b9</color><color name="ice_blue">#effcff</color><color name="light_sage_50">#80a6e87c</color><color name="white_two">#d9d9d9</color><color name="white_six">#ebebeb</color><color name="white_four">#fefefe</color><color name="pinkish_grey">#cecece</color><color name="greyish_brown">#4a4a4a</color><color name="warm_grey">#787878</color><color name="blue_dark">#3b5998</color><color name="rouge">#b40f47</color><color name="light_navy">#186b81</color><color name="gray">#9b9b9b</color><color name="silver">#c8c7cc</color><color name="gunmetal">#3d4856</color><color name="light_sage">#a6e87c</color><color name="light_sage_two">#b8e986</color><color name="dark_gray_75">#c0526173</color><color name="tiffany_blue">#7cd4e8</color><color name="dark_pink">#cf2a63</color><color name="pinkish_grey05">#80cecece</color><color name="white_five">#eeeeee</color><color name="greyish_brown_two">#434343</color><color name="black__12">#1e000000</color></file><file path="/Users/phandangchien/Documents/projects/News/library/src/main/res/values/themes.xml" qualifiers=""><style name="App_Theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/dark_sky_blue</item>
+        <item name="colorPrimaryVariant">@color/dark_sky_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style><style name="Home_Theme" parent="App_Theme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:statusBarColor">@color/dark_sky_blue</item>
+        <item name="android:navigationBarColor" ns1:targetApi="27">@color/black</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" ns1:targetApi="28">false</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style><style name="ProgressDialogTheme" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style></file><file path="/Users/phandangchien/Documents/projects/News/library/src/main/res/values/strings.xml" qualifiers=""><string name="ok">OK</string><string name="cancel">Cancel</string><string name="error_message_Offline">Your Internet connection appears to be offline.</string><string name="exception_unknownhost">Unable to locate the server. Please check your network connection.</string><string name="exception_connect_timeout">Unable to connect to the server. Please check your network connection.</string><string name="exception_socket_timeout">The connection has timed out. Please try again.</string><string name="exception_socket">There are some problems with the connection. Please try again.</string><string name="exception_ssl_handshake">Your connection is not secure.</string><string name="error_something_went_wrong">Some thing went wrong</string><string name="no_internet_connection">No internet connection</string><string name="please_check_your_internet_connection">Please check your internet connection</string></file><file path="/Users/phandangchien/Documents/projects/News/library/src/main/res/values/attrs.xml" qualifiers=""><attr format="string" name="text"/><attr format="dimension" name="text_size"/><attr format="dimension" name="icon_size"/><attr format="dimension" name="padding_horizontal"/><attr format="dimension" name="padding_vertical"/><attr format="reference" name="text_color"/><attr format="reference" name="text_font"/><attr format="reference" name="icon"/><attr format="reference" name="background_color"/><attr format="boolean" name="enabled"/><declare-styleable name="BaseButton">
+        <attr name="button_type">
+            <enum name="normal" value="0"/>
+            <enum name="outlined" value="1"/>
+            <enum name="text" value="2"/>
+        </attr>
+        <attr name="size">
+            <enum name="basic" value="0"/>
+            <enum name="medium" value="1"/>
+        </attr>
+        <attr name="text"/>
+        <attr name="text_size"/>
+        <attr name="icon_size"/>
+        <attr name="icon"/>
+        <attr name="enabled"/>
+        <attr name="background_color"/>
+        <attr name="text_color"/>
+        <attr name="text_font"/>
+        <attr name="padding_horizontal"/>
+        <attr name="padding_vertical"/>
+    </declare-styleable><attr format="reference" name="start_icon"/><attr format="string" name="place_holder"/><declare-styleable name="BaseEditText">
+        <attr name="place_holder"/>
+        <attr name="start_icon"/>
+        <attr name="android:inputType"/>
+    </declare-styleable><attr format="string" name="button_text"/><declare-styleable name="EmptyProfileView">
+        <attr name="icon"/>
+        <attr name="text"/>
+        <attr name="button_text"/>
+    </declare-styleable><attr format="float" name="percent"/><declare-styleable name="SliderView">
+        <attr name="percent"/>
+    </declare-styleable><declare-styleable name="SimpleItemList">
+        <attr name="text"/>
+    </declare-styleable><attr format="boolean" name="can_check"/><declare-styleable name="ItemListCheck">
+        <attr name="text"/>
+        <attr name="can_check"/>
+    </declare-styleable></file><file path="/Users/phandangchien/Documents/projects/News/library/src/main/res/values/ids.xml" qualifiers=""><item name="tag_navigation_destination_id" type="id"/><item name="toolbar" type="id"/></file><file name="app_nav" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/navigation/app_nav.xml" qualifiers="" type="navigation"/><file name="ic_launcher" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-xhdpi/ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="lato" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/font/lato.ttf" qualifiers="" type="font"/><file name="ic_launcher" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/Users/phandangchien/Documents/projects/News/library/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/></source><source path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/rs/debug"/><source path="/Users/phandangchien/Documents/projects/News/library/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/phandangchien/Documents/projects/News/library/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/phandangchien/Documents/projects/News/library/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="ItemListCheck">
+        <attr name="text"/>
+        <attr name="can_check"/>
+    </declare-styleable><declare-styleable name="BaseEditText">
+        <attr name="place_holder"/>
+        <attr name="start_icon"/>
+        <attr name="android:inputType"/>
+    </declare-styleable><declare-styleable name="BaseButton">
+        <attr name="button_type">
+            <enum name="normal" value="0"/>
+            <enum name="outlined" value="1"/>
+            <enum name="text" value="2"/>
+        </attr>
+        <attr name="size">
+            <enum name="basic" value="0"/>
+            <enum name="medium" value="1"/>
+        </attr>
+        <attr name="text"/>
+        <attr name="text_size"/>
+        <attr name="icon_size"/>
+        <attr name="icon"/>
+        <attr name="enabled"/>
+        <attr name="background_color"/>
+        <attr name="text_color"/>
+        <attr name="text_font"/>
+        <attr name="padding_horizontal"/>
+        <attr name="padding_vertical"/>
+    </declare-styleable><declare-styleable name="SliderView">
+        <attr name="percent"/>
+    </declare-styleable><declare-styleable name="SimpleItemList">
+        <attr name="text"/>
+    </declare-styleable><declare-styleable name="EmptyProfileView">
+        <attr name="icon"/>
+        <attr name="text"/>
+        <attr name="button_text"/>
+    </declare-styleable></configuration></mergedItems></merger>

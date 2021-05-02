@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray_75"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/bg_dialog"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="24dp"
+            android:lineHeight="24dp"
+            android:textColor="#8a000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="p"
+            tools:text="Your recent history is only visible to you, are you sure want to clear your recent search?" />
+
+        <easy.app.base.views.BaseButton
+            android:id="@+id/button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            app:button_type="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_message"
+            app:padding_horizontal="24dp"
+            app:padding_vertical="9dp"
+            app:text="OK"
+            app:text_color="@color/dark_sky_blue"
+            app:text_font="@font/lato"
+            app:text_size="14sp" />
+
+        <easy.app.base.views.BaseButton
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            app:button_type="text"
+            app:layout_constraintEnd_toStartOf="@id/button_ok"
+            app:layout_constraintTop_toBottomOf="@id/text_message"
+            app:padding_horizontal="24dp"
+            app:padding_vertical="9dp"
+            app:text="Cancel"
+            app:text_color="@color/dark_sky_blue"
+            app:text_font="@font/lato"
+            app:text_size="14sp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="easy.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" > <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
+6    <!-- <application -->
+7    <!-- android:name="easy.app.base.application.MyApplication" -->
+8    <!-- android:allowBackup="false" -->
+9    <!-- android:icon="@mipmap/ic_launcher" -->
+10    <!-- android:label="App" -->
+11    <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
+12    <!-- android:supportsRtl="true" -->
+13    <!-- android:theme="@style/App_Theme"> -->
+14    <!-- <activity android:name="easy.app.MainActivity"> -->
+15    <!-- <intent-filter> -->
+16    <!-- <action android:name="android.intent.action.MAIN" /> -->
+17    <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+18    <!-- </intent-filter> -->
+19    <!-- </activity> -->
+20    <!-- </application> -->
+21    <uses-sdk
+22        android:minSdkVersion="21"
+22-->/Users/phandangchien/Documents/projects/News/library/src/main/AndroidManifest.xml
+23        android:targetSdkVersion="30" />
+23-->/Users/phandangchien/Documents/projects/News/library/src/main/AndroidManifest.xml
+24
+25</manifest>

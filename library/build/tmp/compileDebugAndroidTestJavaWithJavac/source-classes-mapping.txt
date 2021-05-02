@@ -1,0 +1,2 @@
+easy/app/test/BuildConfig.java
+ easy.app.test.BuildConfig

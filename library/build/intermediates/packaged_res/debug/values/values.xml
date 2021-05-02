@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <attr format="reference" name="background_color"/>
+    <attr format="string" name="button_text"/>
+    <attr format="boolean" name="can_check"/>
+    <attr format="boolean" name="enabled"/>
+    <attr format="reference" name="icon"/>
+    <attr format="dimension" name="icon_size"/>
+    <attr format="dimension" name="padding_horizontal"/>
+    <attr format="dimension" name="padding_vertical"/>
+    <attr format="float" name="percent"/>
+    <attr format="string" name="place_holder"/>
+    <attr format="reference" name="start_icon"/>
+    <attr format="string" name="text"/>
+    <attr format="reference" name="text_color"/>
+    <attr format="reference" name="text_font"/>
+    <attr format="dimension" name="text_size"/>
+    <color name="black">#FF000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black__12">#1e000000</color>
+    <color name="blue_dark">#3b5998</color>
+    <color name="bluish_two">#2999b9</color>
+    <color name="dark_gray_75">#c0526173</color>
+    <color name="dark_pink">#cf2a63</color>
+    <color name="dark_sky_blue">#3fc1e8</color>
+    <color name="gray">#9b9b9b</color>
+    <color name="greyish">#b2b2b2</color>
+    <color name="greyish_brown">#4a4a4a</color>
+    <color name="greyish_brown_two">#434343</color>
+    <color name="gunmetal">#3d4856</color>
+    <color name="ice_blue">#effcff</color>
+    <color name="light_blue">#7ed7ed</color>
+    <color name="light_navy">#186b81</color>
+    <color name="light_sage">#a6e87c</color>
+    <color name="light_sage_50">#80a6e87c</color>
+    <color name="light_sage_two">#b8e986</color>
+    <color name="pale_blue">#dbe2e8</color>
+    <color name="pinkish_grey">#cecece</color>
+    <color name="pinkish_grey05">#80cecece</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="rouge">#b40f47</color>
+    <color name="silver">#c8c7cc</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_light_gray">#788494</color>
+    <color name="tiffany_blue">#7cd4e8</color>
+    <color name="transparent">#00000000</color>
+    <color name="warm_grey">#787878</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_five">#eeeeee</color>
+    <color name="white_four">#fefefe</color>
+    <color name="white_six">#ebebeb</color>
+    <color name="white_three">#f9f9f9</color>
+    <color name="white_two">#d9d9d9</color>
+    <item name="tag_navigation_destination_id" type="id"/>
+    <item name="toolbar" type="id"/>
+    <string name="cancel">Cancel</string>
+    <string name="error_message_Offline">Your Internet connection appears to be offline.</string>
+    <string name="error_something_went_wrong">Some thing went wrong</string>
+    <string name="exception_connect_timeout">Unable to connect to the server. Please check your network connection.</string>
+    <string name="exception_socket">There are some problems with the connection. Please try again.</string>
+    <string name="exception_socket_timeout">The connection has timed out. Please try again.</string>
+    <string name="exception_ssl_handshake">Your connection is not secure.</string>
+    <string name="exception_unknownhost">Unable to locate the server. Please check your network connection.</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="ok">OK</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection</string>
+    <style name="App_Theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_sky_blue</item>
+        <item name="colorPrimaryVariant">@color/dark_sky_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+    <style name="Home_Theme" parent="App_Theme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:statusBarColor">@color/dark_sky_blue</item>
+        <item name="android:navigationBarColor" ns1:targetApi="27">@color/black</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" ns1:targetApi="28">false</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+    <style name="ProgressDialogTheme" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <declare-styleable name="BaseButton">
+        <attr name="button_type">
+            <enum name="normal" value="0"/>
+            <enum name="outlined" value="1"/>
+            <enum name="text" value="2"/>
+        </attr>
+        <attr name="size">
+            <enum name="basic" value="0"/>
+            <enum name="medium" value="1"/>
+        </attr>
+        <attr name="text"/>
+        <attr name="text_size"/>
+        <attr name="icon_size"/>
+        <attr name="icon"/>
+        <attr name="enabled"/>
+        <attr name="background_color"/>
+        <attr name="text_color"/>
+        <attr name="text_font"/>
+        <attr name="padding_horizontal"/>
+        <attr name="padding_vertical"/>
+    </declare-styleable>
+    <declare-styleable name="BaseEditText">
+        <attr name="place_holder"/>
+        <attr name="start_icon"/>
+        <attr name="android:inputType"/>
+    </declare-styleable>
+    <declare-styleable name="EmptyProfileView">
+        <attr name="icon"/>
+        <attr name="text"/>
+        <attr name="button_text"/>
+    </declare-styleable>
+    <declare-styleable name="ItemListCheck">
+        <attr name="text"/>
+        <attr name="can_check"/>
+    </declare-styleable>
+    <declare-styleable name="SimpleItemList">
+        <attr name="text"/>
+    </declare-styleable>
+    <declare-styleable name="SliderView">
+        <attr name="percent"/>
+    </declare-styleable>
+</resources>
