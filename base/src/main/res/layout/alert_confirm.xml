@@ -40,7 +40,7 @@
             app:layout_constraintTop_toBottomOf="@id/text_message"
             app:padding_horizontal="24dp"
             app:padding_vertical="9dp"
-            app:text="OK"
+            app:text="@string/cancel"
             app:text_color="@color/dark_sky_blue"
             app:text_font="@font/lato"
             app:text_size="14sp" />
@@ -56,7 +56,7 @@
             app:layout_constraintTop_toBottomOf="@id/text_message"
             app:padding_horizontal="24dp"
             app:padding_vertical="9dp"
-            app:text="Cancel"
+            app:text="@string/cancel"
             app:text_color="@color/dark_sky_blue"
             app:text_font="@font/lato"
             app:text_size="14sp" />

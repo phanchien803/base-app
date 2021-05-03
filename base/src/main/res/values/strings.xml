@@ -10,4 +10,5 @@
     <string name="error_something_went_wrong">Some thing went wrong</string>
     <string name="no_internet_connection">No internet connection</string>
     <string name="please_check_your_internet_connection">Please check your internet connection</string>
+    <string name="confirm_exit">Do you want exit app?</string>
 </resources>

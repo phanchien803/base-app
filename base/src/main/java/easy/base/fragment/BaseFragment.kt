@@ -52,7 +52,6 @@ abstract class BaseFragment() : Fragment() {
             contentInsetStartWithNavigation = 0
         }
         viewModel.errorsFlow
-            .flowWithLifecycle(viewLifecycleOwner.lifecycle)
             .onEach { viewError ->
                 val errorMessage = when (viewError) {
                     is ViewError.ResourceError -> getString(viewError.resId)

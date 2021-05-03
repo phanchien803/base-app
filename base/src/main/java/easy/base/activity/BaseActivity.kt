@@ -5,6 +5,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
 import easy.base.R
+import easy.base.fragment.AlertDialogFragment
 import easy.base.fragment.BaseFragment
 
 @AndroidEntryPoint
@@ -27,7 +28,7 @@ abstract class BaseActivity : AppCompatActivity() {
             if (!currentFragment.handleOnBackPressed()) {
                 supportFragmentManager.apply {
                     if (backStackEntryCount == 0) {
-                        finish()
+                       handleExitApp()
                     } else {
                         popBackStack()
                     }
@@ -36,5 +37,13 @@ abstract class BaseActivity : AppCompatActivity() {
         } else {
             super.onBackPressed()
         }
+    }
+
+    protected fun handleExitApp() {
+        AlertDialogFragment.newConfirmInstance(getString(R.string.confirm_exit))
+            .setPositiveButton {
+                finish()
+            }
+            .show(supportFragmentManager, "")
     }
 }
