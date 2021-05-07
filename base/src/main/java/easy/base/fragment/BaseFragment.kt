@@ -227,13 +227,7 @@ abstract class BaseFragment() : Fragment() {
 
         val adLoader = builder.withAdListener(object : AdListener() {
             override fun onAdFailedToLoad(loadAdError: LoadAdError) {
-                val error =
-                    """
-           domain: ${loadAdError.domain}, code: ${loadAdError.code}, message: ${loadAdError.message}""""
-                Toast.makeText(
-                    requireContext(), "Failed to load native ad with error $error",
-                    Toast.LENGTH_SHORT
-                ).show()
+
             }
         }).build()
 
