@@ -1,28 +1,27 @@
 package easy.base.fragment
 
 import android.graphics.Color
-import android.os.Build
 import android.os.Bundle
+import android.util.DisplayMetrics
+import android.view.Display
 import android.view.View
 import android.widget.*
-import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.widget.Toolbar
-import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.fragment.findNavController
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
-import easy.base.viewmodel.BaseViewModel
-import easy.base.viewmodel.ViewError
 import dagger.hilt.android.AndroidEntryPoint
+import easy.base.R
 import easy.base.extension.hideKeyBoard
 import easy.base.progress.ProgressDialogFragment
-import easy.base.R
+import easy.base.viewmodel.BaseViewModel
+import easy.base.viewmodel.ViewError
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
+
 
 @AndroidEntryPoint
 abstract class BaseFragment() : Fragment() {
@@ -211,8 +210,6 @@ abstract class BaseFragment() : Fragment() {
             populateUnifiedNativeAdView(unifiedNativeAd, adView)
             ad_frame.removeAllViews()
             ad_frame.addView(adView)
-            val buttonClose = adView.findViewById<Button>(R.id.button_close_ad)
-            buttonClose.setOnClickListener { ad_frame.isVisible = false }
         }
 
         val videoOptions = VideoOptions.Builder()
@@ -232,5 +229,32 @@ abstract class BaseFragment() : Fragment() {
         }).build()
 
         adLoader.loadAd(AdRequest.Builder().build())
+    }
+
+    fun loadBanner(adsID: String, ad_frame: FrameLayout) {
+        val adView = AdView(requireContext())
+        adView.adUnitId = adsID
+        val adRequest: AdRequest = AdRequest.Builder()
+            .build()
+        val adSize = getAdSize()
+        adView.adSize = adSize
+        adView.adListener = object : AdListener() {
+            override fun onAdLoaded() {
+                super.onAdLoaded()
+                ad_frame.removeAllViews()
+                ad_frame.addView(adView)
+            }
+        }
+        adView.loadAd(adRequest)
+    }
+
+    private fun getAdSize(): AdSize {
+        val display: Display = requireActivity().windowManager.defaultDisplay
+        val outMetrics = DisplayMetrics()
+        display.getMetrics(outMetrics)
+        val widthPixels = outMetrics.widthPixels.toFloat()
+        val density = outMetrics.density
+        val adWidth = (widthPixels / density).toInt()
+        return AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(requireContext(), adWidth)
     }
 }
