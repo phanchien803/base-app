@@ -234,6 +234,8 @@ abstract class BaseFragment() : Fragment() {
     fun loadBanner(adsID: String, ad_frame: FrameLayout) {
         val adView = AdView(requireContext())
         adView.adUnitId = adsID
+        ad_frame.removeAllViews()
+        ad_frame.addView(adView)
         val adRequest: AdRequest = AdRequest.Builder()
             .build()
         val adSize = getAdSize()
@@ -241,8 +243,6 @@ abstract class BaseFragment() : Fragment() {
         adView.adListener = object : AdListener() {
             override fun onAdLoaded() {
                 super.onAdLoaded()
-                ad_frame.removeAllViews()
-                ad_frame.addView(adView)
             }
         }
         adView.loadAd(adRequest)
